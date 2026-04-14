@@ -21,53 +21,20 @@ body {
     overflow-x: hidden;
 }
 
-/* NAVBAR */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    color: var(--white);
-    flex-wrap: wrap;
-}
-
-.navbar span {
-    font-weight: bold;
-    color: var(--white);
-}
-
-.navbar .links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-.navbar a {
-    color: var(--white);
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    color: var(--accent);
-}
-
-/* HEADER */
-
-.header {
+.page-header {
     text-align: center;
-    padding: 50px 10%;
+    padding: 22px 10%;
     background: var(--light);
     color: var(--primary);
 }
 
-.header h1 {
-    font-size: 36px;
+.page-header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
 }
 
-.header p {
+.page-header p {
+    font-size: 16px;
     color: var(--secondary);
 }
 
@@ -124,24 +91,11 @@ body {
 
 /* FOOTER */
 
-.footer {
-    text-align: center;
-    padding: 30px;
-    color: var(--white);
-}
+
 
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .header {
-        padding: 40px 5%;
-    }
 
     .contact-section {
         padding: 30px 5%;
@@ -150,19 +104,17 @@ body {
     .contact-box {
         padding: 20px;
     }
+    .page-header h1 {
+        font-size: 30px;
+    }
+
+    .page-header p {
+        font-size: 14px;
+    }
 }
-
 @media (max-width: 480px) {
-    .header h1 {
-        font-size: 28px;
+    .page-header {
+        padding: 30px 5%;
     }
-
-    .header p {
-        font-size: 14px;
-    }
-
-    .navbar .links {
-        font-size: 14px;
-        gap: 10px;
-    }
+    
 }

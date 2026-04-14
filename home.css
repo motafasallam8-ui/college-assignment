@@ -44,6 +44,7 @@ body {
 }
 
 .navbar .links {
+    text-transform: uppercase;
     display: flex;
     gap: 2rem;
 }
