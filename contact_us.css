@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
+:root {
+    --primary: #3E2723;
+    --secondary: #5D4037;
+    --accent: #D7CCC8;
+    --light: #EFEBE9;
+    --white: #FFFFFF;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +16,7 @@
 }
 
 body {
-    background: linear-gradient(#4e342e, #d7ccc8);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -20,12 +28,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    color: #4e342e;
+    color: var(--white);
     flex-wrap: wrap;
 }
 
-.navbar h2 {
-    color: white;
+.navbar span {
+    font-weight: bold;
+    color: var(--white);
 }
 
 .navbar .links {
@@ -36,22 +45,22 @@ body {
 }
 
 .navbar a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: #d7ccc8;
+    color: var(--accent);
 }
 
-/* HEADER (MATCH OTHER PAGES) */
+/* HEADER */
 
 .header {
     text-align: center;
     padding: 50px 10%;
-    background: #efebe9;
-    color: #3e2723;
+    background: var(--light);
+    color: var(--primary);
 }
 
 .header h1 {
@@ -59,7 +68,7 @@ body {
 }
 
 .header p {
-    color: #5d4037;
+    color: var(--secondary);
 }
 
 /* CONTACT SECTION */
@@ -70,26 +79,26 @@ body {
     padding: 50px 10%;
 }
 
-/* CONTACT BOX (MATCH OTHER CARDS STYLE) */
+/* CONTACT BOX */
 
 .contact-box {
     width: 100%;
     max-width: 600px;
 
-    background: #4e342e;
+    background: var(--primary);
     backdrop-filter: blur(10px);
 
     padding: 30px;
     border-radius: 15px;
-    color: white;
+    color: var(--white);
 
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(215, 204, 200, 0.3);
     transition: 0.3s;
 }
 
 .contact-box:hover {
     transform: translateY(-5px);
-    background: #77473d;
+    background: var(--secondary);
 }
 
 /* TITLE */
@@ -118,7 +127,7 @@ body {
 .footer {
     text-align: center;
     padding: 30px;
-    color: white;
+    color: var(--white);
 }
 
 /* RESPONSIVE */

@@ -1,8 +1,15 @@
+:root {
+    --primary: #3E2723;
+    --secondary: #5D4037;
+    --accent: #D7CCC8;
+    --light: #EFEBE9;
+    --white: #FFFFFF;
+}
 .page-header {
     text-align: center;
     padding: 22px 10%;
-    background: #efebe9;
-    color: #3e2723;
+    background: var(--light);
+    color: var(--primary);
 }
 
 .page-header h1 {
@@ -12,13 +19,13 @@
 
 .page-header p {
     font-size: 16px;
-    color: #5d4037;
+    color: var(--secondary);
 }
 
 .overview {
     text-align: center;
-    background: #efebe9;
-    color: #3e2723;
+    background: var(--light);
+    color: var(--primary);
     padding: 10px 10%;
 }
 
@@ -31,15 +38,15 @@
     display: flex;
     justify-content: center;
     padding: 25px 10%;
-    background: linear-gradient(#a1887f, #d7ccc8);
+    background: linear-gradient(var(--secondary), var(--accent));
 }
 
 table {
     width: 100%;
     max-width: 900px;
     border-collapse: collapse;
-    background: rgba(78, 52, 46, 0.25);
-    color: white;
+    background: var(--primary);
+    color: var(--white);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -52,11 +59,11 @@ th, td {
 }
 
 th {
-    background: rgba(78, 52, 46, 0.55);
+    background: rgba(62, 39, 35, 0.7);
 }
 
 tr:hover {
-    background: rgba(78, 52, 46, 0.45);
+    background: rgba(93, 64, 55, 0.5);
     transition: 0.3s;
 }
 

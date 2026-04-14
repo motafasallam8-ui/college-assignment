@@ -1,21 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+/* ===================== THEME COLORS ===================== */
+:root {
+    --primary: #3E2723;
+    --secondary: #5D4037;
+    --accent: #D7CCC8;
+    --light: #EFEBE9;
+    --white: #FFFFFF;
+    --muted: #A1887F;
+}
+
+/* ===================== RESET ===================== */
 * {
     font-family: "Ubuntu", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
+/* ===================== BODY ===================== */
 body {
     height: auto;
     font-size: 22px;
-    background: linear-gradient(#4e342e, #d7ccc8);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
 }
 
+/* ===================== NAVBAR ===================== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -26,8 +40,7 @@ body {
 .navbar .logo span {
     font-size: 22px;
     font-weight: bold;
-    color: #F5F7FA;
-    text-transform: uppercase;
+    color: var(--white);
 }
 
 .navbar .links {
@@ -42,27 +55,29 @@ li {
 a {
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    color: #F5F7FA;
+    color: var(--white);
 }
 
 a:hover {
-    color: #9e6018;
-    border-bottom: 2px solid;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
 }
 
+/* ===================== HERO ===================== */
 .hero {
     height: 100vh;
     background: url("college_photo.png") no-repeat center center/cover;
     position: relative;
 }
 
+/* ===================== OVERLAY ===================== */
 .overlay {
     position: absolute;
-    top:70%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;     
-    color: white;
+    text-align: center;
+    color: var(--white);
 }
 
 .overlay h1 {
@@ -75,6 +90,7 @@ a:hover {
     margin-bottom: 25px;
 }
 
+/* ===================== BUTTONS ===================== */
 .buttons {
     display: flex;
     gap: 15px;
@@ -88,33 +104,35 @@ button {
     cursor: pointer;
     transition: 0.3s;
 }
-.buttons a:hover{
+
+.buttons a:hover {
     border-bottom: 0;
 }
 
 .btn-primary {
-    background-color: #3b5b89;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--white);
 }
 
 .btn-primary:hover {
-    background-color: #2c4568;
+    background-color: var(--primary);
 }
 
 .btn-secondary {
-    background-color: #e6d7c3;
-    color: #333;
+    background-color: var(--accent);
+    color: var(--primary);
 }
 
 .btn-secondary:hover {
-    background-color: #d5c3aa;
+    background-color: var(--light);
 }
 
+/* ===================== STEPS ===================== */
 .steps {
     padding: 100px 10%;
-    background: linear-gradient(#4e342e, #d7ccc8);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     text-align: center;
-    color: white;
+    color: var(--white);
 }
 
 .steps h2 {
@@ -128,14 +146,13 @@ button {
     gap: 40px;
     flex-wrap: wrap;
     padding: 60px;
-    padding-bottom: 60px;
 }
 
 .step {
     width: 120px;
     height: 120px;
-    background: rgba(148, 51, 51, 0.15);
-    border: 1px solid rgba(158, 100, 100, 0.3);
+    background: rgba(215, 204, 200, 0.15);
+    border: 1px solid rgba(93, 64, 55, 0.3);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -143,21 +160,21 @@ button {
     justify-content: center;
     backdrop-filter: blur(6px);
     transition: all 0.3s ease;
-    color: white;
+    color: var(--white);
     cursor: pointer;
 }
 
 .step:hover {
     transform: scale(1.2);
-    background: rgba(158, 65, 45, 0.164);
+    background: rgba(93, 64, 55, 0.25);
 }
 
 .number {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: rgb(138, 70, 70);
-    color: #4e342e;
+    background: var(--secondary);
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,10 +182,11 @@ button {
     margin-bottom: 10px;
 }
 
+/* ===================== CONTENT ===================== */
 .content {
     padding: 80px 10%;
-    background-color: #d7ccc8;
-    color: #333;
+    background-color: var(--light);
+    color: var(--primary);
 }
 
 .content h2 {
@@ -182,9 +200,10 @@ button {
     line-height: 1.6;
 }
 
+/* ===================== FOOTER ===================== */
 .footer {
-    background: #3e2723;
-    color: white;
+    background: var(--primary);
+    color: var(--white);
     padding: 60px 10%;
     text-align: center;
     margin-top: 50px;
@@ -192,19 +211,19 @@ button {
 }
 
 .footer:hover {
-    background: #4e342e;
+    background: var(--secondary);
 }
 
 .footer h3 {
     font-size: 26px;
     margin-bottom: 10px;
-    color: #efebe9;
+    color: var(--light);
 }
 
 .footer p {
     font-size: 14px;
     margin-bottom: 20px;
-    color: #d7ccc8;
+    color: var(--accent);
 }
 
 .footer-links {
@@ -217,22 +236,23 @@ button {
 
 .footer-links a {
     text-decoration: none;
-    color: #d7ccc8;
+    color: var(--accent);
     font-size: 14px;
     transition: 0.3s;
     border-bottom: 1px solid transparent;
 }
 
 .footer-links a:hover {
-    color: white;
-    border-bottom: 1px solid white;
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
 }
 
 .copy {
     font-size: 13px;
-    color: #a1887f;
+    color: var(--muted);
 }
 
+/* ===================== RESPONSIVE ===================== */
 @media (max-width: 992px) {
     .overlay {
         top: 50%;
@@ -269,9 +289,7 @@ button {
     .step-container {
         flex-direction: column;
         align-items: center;
-    
     }
-    
 
     .step {
         width: 140px;
