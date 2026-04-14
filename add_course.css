@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: linear-gradient(#4e342e, #d7ccc8);
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    color: white;
+}
+
+.navbar h2 {
+    color: #fff;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #d7ccc8;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    padding: 50px 10%;
+    background: #efebe9;
+    color: #3e2723;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #5d4037;
+}
+
+/* FORM CONTAINER */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 10%;
+}
+
+/* FORM */
+
+form {
+    width: 100%;
+    max-width: 850px;
+
+    background: rgba(85, 25, 25, 0.603);
+    backdrop-filter: blur(10px);
+
+    padding: 30px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    color: white;
+}
+
+/* FIELD */
+
+.field {
+    flex: 1 1 calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* FULL WIDTH FIELD */
+
+.full {
+    flex: 1 1 100%;
+}
+
+/* LABELS */
+
+label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #f5f5f5;
+}
+
+/* INPUTS */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.92);
+    color: #3e2723;
+}
+
+/* TEXTAREA FIX (FULL WIDTH + END TO END) */
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* BUTTON */
+
+button {
+    flex: 1 1 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #3e2723;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #5d4037;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .field {
+        flex: 1 1 100%;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
