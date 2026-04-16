@@ -16,7 +16,7 @@
 }
 
 body {
-    background: linear-gradient( var(--primary), var(--accent));
+    background: linear-gradient(var(--primary), var(--accent));
     min-height: 100vh;
 }
 

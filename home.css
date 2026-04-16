@@ -60,6 +60,10 @@ a:hover {
     border-bottom: 2px solid var(--accent);
 }
 
+.active {
+    color: #3E2723 !important;
+}
+
 .hero {
     height: 100vh;
     background: url("college_photo.png") no-repeat center center/cover;
