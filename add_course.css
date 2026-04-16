@@ -20,7 +20,6 @@ body {
     min-height: 100vh;
 }
 
-/* NAVBAR */
 
 .navbar {
     display: flex;
@@ -51,7 +50,6 @@ body {
     color: var(--accent);
 }
 
-/* HEADER */
 
 .header {
     text-align: center;
@@ -70,7 +68,6 @@ body {
     color: var(--secondary);
 }
 
-/* FORM CONTAINER */
 
 .form-container {
     display: flex;
@@ -78,7 +75,6 @@ body {
     padding: 40px 10%;
 }
 
-/* FORM */
 
 form {
     width: 100%;
@@ -97,7 +93,6 @@ form {
     color: var(--white);
 }
 
-/* FIELD */
 
 .field {
     flex: 1 1 calc(50% - 10px);
@@ -105,13 +100,11 @@ form {
     flex-direction: column;
 }
 
-/* FULL WIDTH FIELD */
 
 .full {
     flex: 1 1 100%;
 }
 
-/* LABELS */
 
 label {
     margin-bottom: 6px;
@@ -119,7 +112,6 @@ label {
     color: var(--light);
 }
 
-/* INPUTS */
 
 input,
 select,
@@ -133,14 +125,12 @@ textarea {
     color: var(--primary);
 }
 
-/* TEXTAREA */
 
 textarea {
     height: 120px;
     resize: none;
 }
 
-/* BUTTON */
 
 button {
     flex: 1 1 100%;
@@ -159,7 +149,6 @@ button:hover {
     color: var(--primary);
 }
 
-/* RESPONSIVE */
 
 @media (max-width: 768px) {
     .field {

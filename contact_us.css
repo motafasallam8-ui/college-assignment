@@ -38,7 +38,6 @@ body {
     color: var(--secondary);
 }
 
-/* CONTACT SECTION */
 
 .contact-section {
     display: flex;
@@ -46,7 +45,6 @@ body {
     padding: 50px 10%;
 }
 
-/* CONTACT BOX */
 
 .contact-box {
     width: 100%;
@@ -68,14 +66,12 @@ body {
     background: var(--secondary);
 }
 
-/* TITLE */
 
 .contact-box h2 {
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* INFO BOX */
 
 .info {
     margin-bottom: 15px;
@@ -89,11 +85,8 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* FOOTER */
 
 
-
-/* RESPONSIVE */
 
 @media (max-width: 768px) {
 

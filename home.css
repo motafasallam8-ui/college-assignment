@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* ===================== THEME COLORS ===================== */
 :root {
     --primary: #3E2723;
     --secondary: #5D4037;
@@ -10,7 +9,6 @@
     --muted: #A1887F;
 }
 
-/* ===================== RESET ===================== */
 * {
     font-family: "Ubuntu", sans-serif;
     padding: 0;
@@ -22,14 +20,12 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ===================== BODY ===================== */
 body {
     height: auto;
     font-size: 22px;
     background: linear-gradient(135deg, var(--primary), var(--accent));
 }
 
-/* ===================== NAVBAR ===================== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -64,14 +60,12 @@ a:hover {
     border-bottom: 2px solid var(--accent);
 }
 
-/* ===================== HERO ===================== */
 .hero {
     height: 100vh;
     background: url("college_photo.png") no-repeat center center/cover;
     position: relative;
 }
 
-/* ===================== OVERLAY ===================== */
 .overlay {
     position: absolute;
     top: 70%;
@@ -91,7 +85,6 @@ a:hover {
     margin-bottom: 25px;
 }
 
-/* ===================== BUTTONS ===================== */
 .buttons {
     display: flex;
     gap: 15px;
@@ -128,7 +121,6 @@ button {
     background-color: var(--light);
 }
 
-/* ===================== STEPS ===================== */
 .steps {
     padding: 100px 10%;
     background: linear-gradient(135deg, var(--primary), var(--accent));
@@ -183,7 +175,6 @@ button {
     margin-bottom: 10px;
 }
 
-/* ===================== CONTENT ===================== */
 .content {
     padding: 80px 10%;
     background-color: var(--light);
@@ -201,7 +192,6 @@ button {
     line-height: 1.6;
 }
 
-/* ===================== FOOTER ===================== */
 .footer {
     background: var(--primary);
     color: var(--white);
@@ -253,7 +243,6 @@ button {
     color: var(--muted);
 }
 
-/* ===================== RESPONSIVE ===================== */
 @media (max-width: 992px) {
     .overlay {
         top: 50%;
